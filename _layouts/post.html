@@ -3,13 +3,13 @@
 <div class="row-fluid">
   <div class="span8">
     <h2>{{page.title}}</h2>
-    <p class="muted">{{page.date | date_to_long_string}}</p>
+    <p class="muted">{{page.date | date: '%B %d, %Y'}}</p>
 
     {{content}}
   </div>
-  <div class="span4">
+  <!-- <div class="span4">
     {% include sidebar.html %}
-  </div>
+  </div> -->
 </div>
 
 {% include footer.html %}
