@@ -1,0 +1,11 @@
+<h3>About Me</h3>
+
+<p>Full stack developer with JD and business development experience. My passion is helping people do what they love. I can never know enough about how something works and I have an unquenchable thirst to build.</p>
+
+<h3>Recent Posts</h3>
+
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
