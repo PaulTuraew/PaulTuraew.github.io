@@ -1,4 +1,9 @@
-.me {
-    width:100px;
+.aboutme {
+    height: auto;
+    text-align: center;
+}
+
+.aboutme img {
+    width: 200px;
     height: auto;
 }
