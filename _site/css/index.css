@@ -16,20 +16,8 @@
 }
 
 .footer-social {
-  margin-top:5px;
-  height:30px;
-  margin: 0 auto;
-}
-.footer-social ul {
-  float:left;
-  padding:0;
-  margin:0;
-}
-.footer-social li {
-  float:left;
-  list-style:none;
-  margin-left:5px;
-}
-.footer-social span {
-  float:left;
-}
+    list-style-type: none;
+    display: inline;
+    position: relative;
+  }
+
