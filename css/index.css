@@ -18,9 +18,22 @@
 
 .skills {
   text-align: center;
-  padding: 10px;
   margin-top: -10px;
   background-color: gray;
+}
+
+#skills {
+  padding: 20px;
+}
+
+.portfolio {
+  text-align: center;
+  margin-top: -10px;
+  background-color: #C7C7C7;
+}
+
+#portfolio {
+  padding: 20px;
 }
 
 .footer-social {
@@ -30,7 +43,14 @@
     margin-bottom: -10px;
   }
 
+.contact {
+  text-align: center;
+  margin-top: -10px;
+  background-color: #EBE8E8;
+}
+
   #contact {
 text-align: center;
+padding: 20px;
   }
 
