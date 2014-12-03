@@ -1,9 +1,19 @@
+.cover {
+  text-align: center;
+  margin-top: -30px;
+  background-image: url("http://bgfons.com/upload/stone_texture579.jpg");
+  color: white;
+  height: 400px;
+}
+
+#cover {
+  padding: 20px;
+}
+
 .aboutme {
     height: auto;
     text-align: center;
-    padding: 0;
-    margin-top: -30px;
-    background-image: url("http://bgfons.com/upload/stone_texture579.jpg");
+    padding: 10px;
     color: white;
 }
 
@@ -12,8 +22,8 @@
     height: auto;
 }
 
-.aboutme p {
-  padding: 30px;
+#aboutme {
+  margin: 0 auto;
 }
 
 .skills {
