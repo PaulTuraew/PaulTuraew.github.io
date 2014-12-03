@@ -1,20 +1,26 @@
 .cover {
-  text-align: center;
-  margin-top: -30px;
-  background-image: url("http://bgfons.com/upload/stone_texture579.jpg");
-  color: white;
-  height: 400px;
+  background-image: url("/../assets/Stupendous_Man.png");
+  background-repeat: no-repeat;
+  background-size: 38%;
+  color: black;
+  height: 100%;
 }
 
 #cover {
-  padding: 20px;
+  text-align: center;
+  height: 50%;
+  position: relative;
+  top: 30%;
+  left: 20%;
+
 }
 
 .aboutme {
-    height: auto;
+    height: 100%;
     text-align: center;
-    padding: 10px;
     color: white;
+    background-color: blue;
+    margin-top: 20px;
 }
 
 .aboutme img {
@@ -27,23 +33,23 @@
 }
 
 .skills {
+  height: 100%;
   text-align: center;
-  margin-top: -10px;
   background-color: gray;
+  color: white;
+  margin-top: -10px;
 }
 
 #skills {
-  padding: 20px;
 }
 
 .portfolio {
   text-align: center;
-  margin-top: -10px;
   background-color: #C7C7C7;
+  height: 100%;
 }
 
 #portfolio {
-  padding: 20px;
 }
 
 .footer-social {
