@@ -1,14 +1,17 @@
-<link href="/css/index.css" rel="stylesheet">
+<link href="/css/blog_post.css" rel="stylesheet">
 
 {% include header.html %}
 
 <div class="row-fluid">
   <div class="span8">
-    <h2>{{page.title}}</h2>
-    <p class="muted">{{page.date | date: '%B %d, %Y'}}</p>
+    <div class="postbody">
+      <h2>{{page.title}}</h2>
+      <p class="muted">{{page.date | date: '%B %d, %Y'}}</p>
 
-    {{content}}
+      {{content}}
+      <a href="/blog">Back</a>
+    </div>
   </div>
 </div>
 
-<a href="/blog">Back</a>
+
