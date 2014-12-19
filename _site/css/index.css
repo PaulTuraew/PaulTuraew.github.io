@@ -6,8 +6,10 @@
 }
 
 /*#cover {
-margin-top: 300px;
-position: relative;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 0px;
+  position: relative;
 }*/
 
 .cover img {
@@ -22,6 +24,7 @@ position: relative;
     text-align: center;
     color: white;
     background-color: blue;
+    position: relative;
     margin-top: -10px;
 }
 
@@ -40,6 +43,7 @@ position: relative;
   background-color: gray;
   color: white;
   margin-top: -10px;
+  position: relative;
 }
 
 #skills {
@@ -50,6 +54,7 @@ position: relative;
   background-color: #C7C7C7;
   height: 100%;
   margin-top: -10px;
+  position: relative;
 }
 
 #portfolio {
