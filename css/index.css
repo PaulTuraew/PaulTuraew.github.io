@@ -1,24 +1,24 @@
 .cover {
- /* background-image: url("/../assets/Stupendous_Man.png");
-  background-repeat: no-repeat;
-  background-size: 38%;*/
   color: black;
   height: 100%;
+  text-align: center;
+  position: relative;
 }
 
 #cover {
-  text-align: center;
-  height: 50%;
+  height: 100px;
+  width: 645px;
   position: relative;
-  top: 30%;
+  float: right;
+  margin-top: 275px;
 }
 
 .cover img {
-  height: 60%;
+  height: 70%;
   width: auto;
   float: left;
-  padding: 20px;
-  margin-left: 20px;
+  margin-left: 75px;
+  margin-top: 100px;
 }
 
 .aboutme {
@@ -26,8 +26,8 @@
     text-align: center;
     color: white;
     background-color: blue;
-    margin-top: 20px;
-    padding: 20px;
+    position: relative;
+    margin-top: -10px;
 }
 
 .aboutme img {
@@ -45,6 +45,7 @@
   background-color: gray;
   color: white;
   margin-top: -10px;
+  position: relative;
 }
 
 #skills {
@@ -54,7 +55,8 @@
   text-align: center;
   background-color: #C7C7C7;
   height: 100%;
-  padding: 20px;
+  margin-top: -10px;
+  position: relative;
 }
 
 #portfolio {
