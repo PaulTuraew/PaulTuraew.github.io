@@ -223,8 +223,8 @@ textarea {
 
 body {
   margin: 0;
-  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-  font-size: 14px;
+  font-family: '‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  font-size: 18px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
@@ -4367,6 +4367,8 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
   margin-bottom: 20px;
   overflow: visible;
+  font-size: 20px;
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 
 .navbar-inner {
@@ -4508,7 +4510,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-form .input-prepend input {
   margin-top: 0;
 }
-
+/*
 .navbar-search {
   position: relative;
   float: left;
@@ -4525,7 +4527,7 @@ input[type="submit"].btn.btn-mini {
   line-height: 1;
   -webkit-border-radius: 15px;
      -moz-border-radius: 15px;
-          border-radius: 15px;
+          border-radius: 15px;*/
 }
 
 .navbar-static-top {
