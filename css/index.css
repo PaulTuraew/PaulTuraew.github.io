@@ -63,6 +63,17 @@ body {
   position: relative;
 }
 
+.portfolio img {
+  height: 30%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio img:hover {
+  opacity: .5;
+}
+
 #portfolio {
 }
 
@@ -79,6 +90,8 @@ body {
   display: inline-block;
   padding: 40px;
 }
+
+
 
 
 
