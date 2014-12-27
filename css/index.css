@@ -1,5 +1,5 @@
 body {
-  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  font-family: ‘Garamond’, ‘Book Antiqua’, Palatino, serif;
 }
 
 .cover {
@@ -64,10 +64,11 @@ body {
 }
 
 .portfolio img {
-  height: 30%;
-  display: inline-block;
+  height: 33%;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
 }
 
 .portfolio img:hover {
@@ -75,6 +76,19 @@ body {
 }
 
 #portfolio {
+}
+
+.column-left{
+  float: left;
+  width: 33%;
+}
+.column-right{
+  float: right;
+  width: 33%;
+}
+.column-center{
+  display: inline-block;
+  width: 33%;
 }
 
 .contact {
