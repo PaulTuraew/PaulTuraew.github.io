@@ -1,5 +1,5 @@
 body {
-  font-family: ‘Garamond’, ‘Book Antiqua’, Palatino, serif;
+  font-family: "Palatino Linotype", ‘Book Antiqua’, Palatino, serif;
 }
 
 .cover {
@@ -29,7 +29,7 @@ body {
   height: 100%;
   text-align: center;
   color: white;
-  background-color: blue;
+  background-color: gray;
   position: relative;
   margin-top: -10px;
 }
@@ -43,17 +43,6 @@ body {
   margin: 0 auto;
 }
 
-.skills {
-  height: 100%;
-  text-align: center;
-  background-color: gray;
-  color: white;
-  margin-top: -10px;
-  position: relative;
-}
-
-#skills {
-}
 
 .portfolio {
   text-align: center;
