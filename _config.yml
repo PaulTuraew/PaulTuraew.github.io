@@ -3,7 +3,7 @@ description: "Personal website of Paul Turaew built with Jekyll and Bootstrap"
 
 url: "http://localhost:4000"
 
-paginate: 10
+paginate: 2
 
 markdown: rdiscount
 permalink: pretty
