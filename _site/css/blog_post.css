@@ -1,5 +1,14 @@
 .postbody{
   padding-left: 60px;
   margin-top: 80px;
-  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+/*  font-family: 'Josefin Slab', serif;
+*/}
+
+.navbar {
+  *position: relative;
+  *z-index: 2;
+  margin-bottom: 20px;
+  overflow: visible;
+  font-size: 22px;
+  font-family: 'Josefin Slab', serif;
 }
