@@ -16,6 +16,15 @@ background-color:gray
   font-family: 'Josefin Slab', serif;
 }
 
+/*.cover-left {
+  float: left;
+  width: 50%;
+}
+
+.cover-left {
+  float: left;
+  width: 50%;
+}*/
 #cover {
   height: 100px;
   width: 645px;
