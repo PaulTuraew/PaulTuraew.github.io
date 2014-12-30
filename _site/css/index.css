@@ -3,10 +3,9 @@ font-family: 'Josefin Slab', serif;
 }
 
 hr {
-height:2px;
-border-width:0;
-color:gray;
-background-color:gray
+height: 1px;
+color:white;
+background-color:white;
 }
 
 .cover {
@@ -16,15 +15,6 @@ background-color:gray
   font-family: 'Josefin Slab', serif;
 }
 
-/*.cover-left {
-  float: left;
-  width: 50%;
-}
-
-.cover-left {
-  float: left;
-  width: 50%;
-}*/
 #cover {
   height: 100px;
   width: 645px;
@@ -43,14 +33,15 @@ background-color:gray
 
 .aboutme {
   height: 100%;
+  width: auto;
   text-align: center;
-  color: black;
+  color: white;
+  background-color: #1B1B1B;
   position: relative;
-  margin-top: -10px;
 }
 
 .aboutme img {
-  width: 200px;
+  width: 30%;
   height: auto;
 }
 
@@ -62,7 +53,6 @@ background-color:gray
 .portfolio {
   text-align: center;
   height: 100%;
-  margin-top: -10px;
   position: relative;
 }
 
@@ -96,8 +86,7 @@ background-color:gray
 
 .contact {
   text-align: center;
-  margin-top: -10px;
-  background-color: black;
+  background-color: #1B1B1B;
   color: white;
   list-style-type: none;
   position: relative;
