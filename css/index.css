@@ -1,12 +1,19 @@
 body {
-  font-family: "Palatino Linotype", ‘Book Antiqua’, Palatino, serif;
+font-family: 'Josefin Slab', serif;
+}
+
+hr {
+height:2px;
+border-width:0;
+color:gray;
+background-color:gray
 }
 
 .cover {
-  color: black;
   height: 100%;
   text-align: center;
   position: relative;
+  font-family: 'Josefin Slab', serif;
 }
 
 #cover {
@@ -28,8 +35,7 @@ body {
 .aboutme {
   height: 100%;
   text-align: center;
-  color: white;
-  background-color: gray;
+  color: black;
   position: relative;
   margin-top: -10px;
 }
@@ -46,7 +52,6 @@ body {
 
 .portfolio {
   text-align: center;
-  background-color: #C7C7C7;
   height: 100%;
   margin-top: -10px;
   position: relative;
@@ -83,7 +88,8 @@ body {
 .contact {
   text-align: center;
   margin-top: -10px;
-  background-color: #EBE8E8;
+  background-color: black;
+  color: white;
   list-style-type: none;
   position: relative;
   padding: 20px;
