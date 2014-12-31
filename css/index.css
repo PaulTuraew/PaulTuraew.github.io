@@ -1,5 +1,6 @@
 body {
 font-family: 'Josefin Slab', serif;
+margin: 0 auto;
 }
 
 hr {
@@ -25,6 +26,7 @@ background-color:white;
 
 .cover img {
   height: 70%;
+  position: relative;
   width: auto;
   float: left;
   margin-left: 75px;
@@ -33,22 +35,25 @@ background-color:white;
 
 .aboutme {
   height: 100%;
-  width: auto;
   text-align: center;
   color: white;
   background-color: #1B1B1B;
+  /*background-image: url("/assets/CogSci_Presentation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
   position: relative;
+}
+
+.aboutmeheader, .portfolioheader {
+  padding-top: 10px;
 }
 
 .aboutme img {
   width: 30%;
   height: auto;
+  float: right;
+  position: relative;
 }
-
-#aboutme {
-  margin: 0 auto;
-}
-
 
 .portfolio {
   text-align: center;
