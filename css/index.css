@@ -51,8 +51,14 @@ background-color:white;
 .aboutme img {
   width: 30%;
   height: auto;
-  float: right;
   position: relative;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.span6 {
+font-size: 1.5em;
+padding-top: 20px;
 }
 
 .portfolio {
@@ -79,14 +85,17 @@ background-color:white;
 .column-left{
   float: left;
   width: 33%;
+  font-size: 1.5em;
 }
 .column-right{
   float: right;
   width: 33%;
+  font-size: 1.5em;
 }
 .column-center{
   display: inline-block;
   width: 33%;
+  font-size: 1.5em;
 }
 
 .contact {

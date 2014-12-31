@@ -7,8 +7,8 @@ function scrollNav() {
     $('.'+theClass).parent('li').addClass('active');
     //Animate
     $('html, body').stop().animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 100
-    }, 1000);
+        scrollTop: $( $(this).attr('href') ).offset().top - 35
+    }, 500);
     return false;
   });
   $('.scrollTop a').scrollTop();
