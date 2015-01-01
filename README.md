@@ -1,6 +1,6 @@
 turaew_io
 =========
-[Visit My Personal Page](turaew.io)
+[Visit My Personal Page](http://turaew.io/)
 
 ### Overview/Background
 
