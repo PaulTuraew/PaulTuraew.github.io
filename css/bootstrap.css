@@ -221,14 +221,13 @@ textarea {
   }
 }
 
-/*body {
+body {
   margin: 0;
-  font-family: '‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
   font-size: 18px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
-}*/
+}
 
 a {
   color: #0088cc;

@@ -1,102 +1,78 @@
+
 body {
 font-family: 'Josefin Slab', serif;
 margin: 0 auto;
 }
 
-hr {
+/*hr {
 height: 1px;
 color:white;
 background-color:white;
-}
+}*/
 
-.cover {
+/*.cover {
   height: 100%;
   text-align: center;
   position: relative;
   font-family: 'Josefin Slab', serif;
-}
+}*/
 
-#cover {
+/*#cover {
   height: 100px;
   width: 645px;
   position: relative;
   float: right;
   margin-top: 275px;
-}
+}*/
 
-.cover img {
+/*.cover img {
   height: 70%;
   position: relative;
   width: auto;
   float: left;
   margin-left: 75px;
   margin-top: 100px;
-}
+}*/
 
-.aboutme {
+/*.aboutme {
   height: 100%;
   text-align: center;
   color: white;
   background-color: #1B1B1B;
-  /*background-image: url("/assets/CogSci_Presentation.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
   position: relative;
-}
+}*/
 
-.aboutmeheader, .portfolioheader {
+/*.aboutmeheader, .portfolioheader {
   padding-top: 10px;
-}
+}*/
 
-.aboutme img {
+/*.aboutme img {
   width: 30%;
   height: auto;
   position: relative;
   margin-left: 50px;
   margin-top: 20px;
-}
+}*/
 
-.span6 {
-font-size: 1.5em;
-padding-top: 20px;
-}
 
-.portfolio {
+/*.portfolio {
   text-align: center;
   height: 100%;
   position: relative;
-}
+}*/
 
-.portfolio img {
+/*.portfolio img {
   height: 33%;
   width: auto;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
-}
+}*/
 
 .portfolio img:hover {
   opacity: .5;
 }
 
-#portfolio {
-}
-
-.column-left{
-  float: left;
-  width: 33%;
-  font-size: 1.5em;
-}
-.column-right{
-  float: right;
-  width: 33%;
-  font-size: 1.5em;
-}
-.column-center{
-  display: inline-block;
-  width: 33%;
-  font-size: 1.5em;
-}
 
 .contact {
   text-align: center;
@@ -111,8 +87,4 @@ padding-top: 20px;
   display: inline-block;
   padding: 40px;
 }
-
-
-
-
 
