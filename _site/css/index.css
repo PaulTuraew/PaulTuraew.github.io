@@ -14,7 +14,6 @@ background-color:white;
   height: 100%;
   text-align: center;
   position: relative;
-  font-family: 'Josefin Slab', serif;
 }*/
 
 #cover {
@@ -28,28 +27,32 @@ background-color:white;
   margin-top: 50px;
   overflow: hidden;
   max-height: 100%;
+  height: 80%;
   width: auto;
 }
 
-/*.aboutme {
-  height: 100%;
-  text-align: center;
+#aboutme {
   color: white;
   background-color: #1B1B1B;
   position: relative;
-}*/
+}
 
+#abouttext {
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 125%;
+}
 /*.aboutmeheader, .portfolioheader {
   padding-top: 10px;
 }*/
 
-/*.aboutme img {
-  width: 30%;
-  height: auto;
-  position: relative;
-  margin-left: 50px;
-  margin-top: 20px;
-}*/
+.aboutme img {
+  padding-bottom: 25px;
+  overflow: hidden;
+  max-height: 100%;
+  height: 75%;
+  width: auto;
+}
 
 
 /*.portfolio {
@@ -84,5 +87,6 @@ background-color:white;
 
 .span12 {
   text-align: center;
+  padding: 15px;
 }
 

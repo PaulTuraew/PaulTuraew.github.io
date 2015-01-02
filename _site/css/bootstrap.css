@@ -226,7 +226,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 a {
@@ -631,8 +631,8 @@ a:focus {
 }
 
 .container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
+/*  padding-right: 20px;
+*/  padding-left: 20px;
   *zoom: 1;
 }
 
