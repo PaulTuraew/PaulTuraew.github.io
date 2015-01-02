@@ -16,6 +16,10 @@ background-color:white;
   position: relative;
 }*/
 
+#coversection {
+  margin-bottom: 90px;
+}
+
 #cover {
   margin-top: 275px;
   position: relative;
@@ -42,9 +46,6 @@ background-color:white;
   font-size: 1.25em;
   line-height: 125%;
 }
-/*.aboutmeheader, .portfolioheader {
-  padding-top: 10px;
-}*/
 
 .aboutme img {
   padding-bottom: 25px;
@@ -74,15 +75,16 @@ background-color:white;
 }
 
 
-.contact {
+#contact {
   text-align: center;
   background-color: #1B1B1B;
   list-style-type: none;
+  color: white;
  }
 
 .contact li {
   display: inline-block;
-  padding: 40px;
+  padding: 5px 30px 5px 30px;
 }
 
 .span12 {
