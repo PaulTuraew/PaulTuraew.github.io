@@ -17,22 +17,19 @@ background-color:white;
   font-family: 'Josefin Slab', serif;
 }*/
 
-/*#cover {
-  height: 100px;
-  width: 645px;
-  position: relative;
-  float: right;
+#cover {
   margin-top: 275px;
-}*/
-
-/*.cover img {
-  height: 70%;
   position: relative;
+  text-align: center;
+}
+
+.cover img {
+  position: relative;
+  margin-top: 50px;
+  overflow: hidden;
+  max-height: 100%;
   width: auto;
-  float: left;
-  margin-left: 75px;
-  margin-top: 100px;
-}*/
+}
 
 /*.aboutme {
   height: 100%;
@@ -77,14 +74,15 @@ background-color:white;
 .contact {
   text-align: center;
   background-color: #1B1B1B;
-  color: white;
   list-style-type: none;
-  position: relative;
-  padding: 20px;
-}
+ }
 
 .contact li {
   display: inline-block;
   padding: 40px;
+}
+
+.span12 {
+  text-align: center;
 }
 
