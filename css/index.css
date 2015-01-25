@@ -2,26 +2,30 @@
 body {
 font-family: 'Josefin Slab', serif;
 margin: 0 auto;
+height: 100%;
 }
 
 
 #coversection {
-  margin-bottom: 40px;
-/*  position: relative;
-*/}
-
-#cover {
-  margin-top: 275px;
-  position: relative;
-  text-align: center;
+  background: url(/assets/prez_biz.jpg);
+  background-size: cover;
+  height: 100%;
 }
 
-.cover img {
+#cover {
+  text-align: center;
+  color: black; /*cover image text*/
   position: relative;
-  margin-top: 50px;
-  overflow: hidden;
-  max-height: 80%;
-  width: 80%;
+  height: 100%;
+  padding-top: 20%;
+}
+
+.transbox {
+  background-color: white;
+  border: 1px solid black;
+  opacity:0.5;
+  position: relative;
+  padding: 20px;
 }
 
 
@@ -29,14 +33,15 @@ margin: 0 auto;
   color: white;
   background-color: #1B1B1B;
   position: relative;
+  padding-left: 20px;
 }
 
 #abouttext {
   text-align: center;
-  font-size: 1.25em;
-  line-height: 125%;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-weight: normal;
+  font-size: 1.40em;
+  line-height: 120%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
 .aboutme img {
@@ -50,7 +55,9 @@ margin: 0 auto;
 
 
 #portfolio {
-margin-bottom: 140px;
+margin-bottom: 100px;
+padding-left: 20px;
+text-align: center;
 }
 
 .portfolio img {
@@ -69,6 +76,28 @@ margin-bottom: 140px;
 
 #portfoliodiv {
   text-align: center;
+  padding-left: 8px;
+  font-family:'Source Sans Pro',sans-serif;
+  font-weight:300;
+}
+
+#techIcons {
+  list-style-type: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 983px) {
+   .portfolio li {
+      visibility: hidden;
+  }
+    #techIcons {
+      margin-bottom: -200px;
+    }
+}
+
+.portfolio li{
+  display: inline-block;
+  padding: 20px 50px 0px 50px;
 }
 
 #contact {
@@ -76,6 +105,7 @@ margin-bottom: 140px;
   background-color: #1B1B1B;
   list-style-type: none;
   color: white;
+  padding-left: 20px;
  }
 
 .contact li {
