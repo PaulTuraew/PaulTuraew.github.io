@@ -13,10 +13,10 @@ This site's cover photo was taken by me one day when I went to balance stones wi
 
 Here are some additional photos from that afternoon:
 
-![Paul Balancing](/assets/stones/prez.JPG "The Prez")
+![Paul Balancing](/assets/stones/prez2.JPG "The Prez")
 
-![Paul Balancing](/../assets/stones/stones1.JPG "The Prez")
+![Paul Balancing](/../assets/stones/stones12.JPG "The Prez")
 
-![Paul Balancing](/../assets/stones/stones2.JPG "The Prez")
+![Paul Balancing](/../assets/stones/stones22.JPG "The Prez")
 
-![Paul Balancing](/../assets/stones/prez_stones.JPG "The Prez")
+![Paul Balancing](/../assets/stones/prez_stones2.JPG "The Prez")
