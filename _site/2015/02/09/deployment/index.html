@@ -53,26 +53,23 @@
 <div class="row-fluid">
   <div class="span8">
     <div class="postbody">
-      <h2>Balance - Personal and of Stones</h2>
-      <p class="muted">January 26, 2015</p>
+      <h2>Deployment</h2>
+      <p class="muted">February 09, 2015</p>
 
-      <p>This post is not about programming, its purpose is to add a little substance to this site's cover photo and share a little bit about myself.</p>
+      <p>I wanted to read up on the basics of how teams deploy products. While at GA, we were able to work on a group project using the Agile methodology and scrum tactics but because we worked so closely together, merging branches and getting our app to production was fairly easy.</p>
 
-<p>Not too long ago, I came across a professional photographer who practiced the Zen art of stone balancing. Check his work out <a href="http://www.gravityglue.com/category/stone-balance/">here</a>. The photos drew me in. I overcame any shyness I had about going out to my local trail, getting into the stream and started stacking rocks.</p>
+<p>The following is a very basic primer on how larger teams <strong>might</strong> operate. Here are the basics for a good deployment workflow:</p>
 
-<p>I do not formally practice Zen anything, but I am a fan of anything that can create "flow" so effortlessly within me.</p>
+<ol>
+<li><p>Developers work on bugs and features in separate branches. Really minor updates can be committed directly to the stable <em>development branch</em> (AKA as the <em>master branch</em> in git).</p></li>
+<li><p>Once features are implemented, they are merged into the staging branch and deployed to the <em>Staging environment</em> for QA and testing.</p></li>
+<li><p>After testing is complete, feature branches are merged into the development branch.</p></li>
+<li><p>On the release date, the development branch is merged into production and then deployed to the <em>Production environment</em>.</p></li>
+</ol>
 
-<p>This site's cover photo was taken by me one day when I went to balance stones with the intent of also practicing my macro photography with the help of President Business. I thought minifig's facial expression made for the perfect emotional contrast to what I was doing in the real world.</p>
 
-<p>Here are some additional photos from that afternoon:</p>
-
-<p><img src="/assets/stones/prez2.jpg" title="The Prez" alt="Paul Balancing" /></p>
-
-<p><img src="/../assets/stones/stones12.jpg" title="The Prez" alt="Paul Balancing" /></p>
-
-<p><img src="/../assets/stones/stones22.jpg" title="The Prez" alt="Paul Balancing" /></p>
-
-<p><img src="/../assets/stones/prez_stones2.jpg" title="The Prez" alt="Paul Balancing" /></p>
+<p>Here is a diagram of the basic process:
+<img src="http://blogs.msdn.com/blogfiles/pblog/WindowsLiveWriter/StudentprojectExpressSettinguptheenviron_1424A/sandboxes_3.gif" alt="Deployment Diagram" /></p>
 
       <a href="/blog">Back</a>
     </div>
