@@ -1,0 +1,121 @@
+<link href="/css/blog_post.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>turaew.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Paul Turaew built with Jekyll and Bootstrap">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/turaew_favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/turaew_favicon.ico" type="image/x-icon">
+  <style>
+  body {
+  }
+  </style>
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand", "active" href="/">{ turaew.io }</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+              <!--   <li><a id="link1" class="nav-section1" href="/">back home</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/index.js"></script>
+    </body>
+
+
+<div class="row-fluid">
+  <div class="span8">
+    <div class="postbody">
+      <h2>Bootstrap v.3 Basics</h2>
+      <p class="muted">May 03, 2015</p>
+
+      <p><strong>What is Bootstrap?</strong></p>
+
+<p>Bootstrap is a responsive design framework that is mobile first. Basically, you download the files, incorporate them into your project and use what you need, how you need.</p>
+
+<p>Bootstrap can best be thought of as a middle of the road front-end solution... in between a using a pre-built (out of the box) template and making a website from scratch.</p>
+
+<p><em>Positives</em>: You can create a responsive site without having to know too much HTML or CSS if you're a back-end dev. Font icons that are now vector graphics can be re-sized and colored unlike the .png files of old.</p>
+
+<p><em>Negatives</em>: You will have to learn someone else's code (Bootstrap's). You will get a bloated code base that may require more writing than a custom job.</p>
+
+<p><strong>Getting Started</strong></p>
+
+<p>After downloading the files from http://getbootstrap.com/getting-started/ you will really only need 3 files which are located in the "dist" folder: "css", "js", and "fonts."</p>
+
+<p>Don't worry about the .min files (within the css and js folders), these are simply condensed versions of the other css files. good to link to them but use larger (spaced out) files for reference.</p>
+
+<p>To truley make best use of Bootstrap, you will also want to download and link to jQuery and Respond.js in your HTML file.</p>
+
+<p><strong>Setting up the HTML page</strong></p>
+
+<pre><code>&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Website&lt;/title&gt;
+  &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+  &lt;link href="css/custom.css" rel="stylesheet"&gt;
+  &lt;script src="js/respond.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;!-- javascript here in body to allow page to load and not wait for JS functionality (increase speed)--&gt;
+  &lt;!-- CDN version of jQuery (to not load entire library, this will load from a URL) --&gt;
+  &lt;script src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
+  &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+</code></pre>
+
+<p>  <em>For Respond.js</em>: Go to Github page, copy the .min source code, create a new file in your project's JS folder called "respond.js" and save. Linking src belongs in head and not body per Respond's instructions.</p>
+
+<p><strong>The Grid System</strong></p>
+
+<p>Basically, there are 4 class prefixes that will dictate whether the grid cells remain horizontal or move into vertical allignment:</p>
+
+<ul>
+<li>.col-xs-#: will never move into vertical allignment, no matter how small the window;</li>
+<li>.col-sm-#: will move into vertical allignment at 750px;</li>
+<li>.col-md-#: will move into vertical allignment at 970px;</li>
+<li>.col-lg-#: will move into vertical allignment at 1170px.</li>
+</ul>
+
+
+<p>The <em>#</em> corresponds to numbers 1-12 depending on how wide you want that grid cell to be.</p>
+
+<p><em>!Important</em> You must start your HTML section (in which you want to use the grid system) with <code>&lt;div class="row"&gt;</code>.</p>
+
+      <br>
+      <a class="button back" href="/blog">Back to Blog</a>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+
