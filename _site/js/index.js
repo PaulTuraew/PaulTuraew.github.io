@@ -7,7 +7,7 @@ function scrollNav() {
     $('.'+theClass).parent('li').addClass('active');
     //Animate
     $('html, body').stop().animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 35
+        scrollTop: $( $(this).attr('href') ).offset().top - 45
     }, 500);
     return false;
   });
