@@ -1,8 +1,8 @@
 
 body {
-font-family: 'Josefin Slab', serif;
-margin: 0 auto;
-height: 100%;
+  font-family: 'Josefin Slab', serif;
+  margin: 0 auto;
+  height: 100%;
 }
 
 
@@ -29,8 +29,8 @@ height: 100%;
 }
 
 #aboutme {
-  color: white;
-  background-color: #1B1B1B;
+  color: black;
+  background-color: #ffffff;
   position: relative;
   padding-left: 20px;
 }
@@ -42,21 +42,27 @@ height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   opacity: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .aboutme img {
   padding-bottom: 25px;
+  padding-top: 20px;
   overflow: hidden;
   max-height: 100%;
   max-width: 100%;
-  width: auto;
 }
 
+#headshot{
+  width:75%;
+  margin:0 auto;
+}
 
 #portfolio {
-margin-bottom: 100px;
-padding-left: 20px;
-text-align: center;
+  margin-bottom: 150px;
+  padding-left: 20px;
+  text-align: center;
 }
 
 .portfolio img {
@@ -90,12 +96,12 @@ text-align: center;
 }
 
 @media screen and (max-width: 983px) {
-   .portfolio li {
-      visibility: hidden;
-  }
-    #techIcons {
-      margin-bottom: -200px;
-    }
+ .portfolio li {
+  visibility: hidden;
+}
+#techIcons {
+  margin-bottom: -200px;
+}
 }
 
 .portfolio li{
@@ -109,7 +115,7 @@ text-align: center;
   list-style-type: none;
   color: white;
   padding-left: 20px;
- }
+}
 
 .contact li {
   display: inline-block;
@@ -119,5 +125,60 @@ text-align: center;
 .span12 {
   text-align: center;
   padding: 15px;
+}
+
+#circleSM {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: solid 1px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+#circle {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: solid 1px;
+  margin: 0 auto;
+  background-color: #6E6E6E;
+}
+
+#circle2 {
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: solid 1px;
+  margin: 0 auto;
+  background-color: #BDBDBD;
+}
+
+#circle3 {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: solid 1px;
+  margin: 0 auto;
+  background-color: #E3E3E3;
+}
+
+#circle4 {
+  width: 38px;
+  height: 38px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: solid 1px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
