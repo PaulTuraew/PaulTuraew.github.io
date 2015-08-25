@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+#minifig {
+  display: none;
+}
+
 #cover {
   text-align: center;
   color: black; /*cover image text*/
@@ -95,6 +99,7 @@ body {
   text-align: center;
 }
 
+/*when screen is less than 983px, hide portfolio icons*/
 @media screen and (max-width: 983px) {
  .portfolio li {
   visibility: hidden;
@@ -102,6 +107,21 @@ body {
 #techIcons {
   margin-bottom: -200px;
 }
+}
+
+/*disable cover background image and replace with little minifig when small screen
+*/
+@media only screen and (max-width: 645px)  {
+  #coversection {
+    background-image: none;
+  }
+  #minifig {
+    display: block;
+    padding-top: 40px;
+  }
+  .transbox{
+    background-color: #FAD230;
+  }
 }
 
 .portfolio li{
@@ -114,7 +134,7 @@ body {
   background-color: #2C2827;
   list-style-type: none;
   color: white;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .contact li {
@@ -181,4 +201,3 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
 }
-
