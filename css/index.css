@@ -114,7 +114,7 @@ body {
   background-color: #2C2827;
   list-style-type: none;
   color: white;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .contact li {
@@ -181,4 +181,3 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
 }
-
