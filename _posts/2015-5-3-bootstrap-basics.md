@@ -18,29 +18,37 @@ Bootstrap can best be thought of as a middle of the road front-end solution... i
 
 After downloading the files from http://getbootstrap.com/getting-started/ you will really only need 3 files which are located in the "dist" folder: "css", "js", and "fonts."
 
-Don't worry about the .min files (within the css and js folders), these are simply condensed versions of the other css files. good to link to them but use larger (spaced out) files for reference.
+Don't worry about the .min files (within the css and js folders), these are simply condensed versions of the other css files. It's good to link to them but look at the larger (spaced out / un-minified) files for reference.
 
 To truley make best use of Bootstrap, you will also want to download and link to jQuery and Respond.js in your HTML file.
 
 **Setting up the HTML page**
 
 ```
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
-  <script src="js/respond.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RI Turaew's Professional Site</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
   </head>
+
   <body>
-  <!-- javascript here in body to allow page to load and not wait for JS functionality (increase speed)-->
-  <!-- CDN version of jQuery (to not load entire library, this will load from a URL) -->
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <h1>Hello, world!</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
+</html>
   ```
-  *For Respond.js*: Go to Github page, copy the .min source code, create a new file in your project's JS folder called "respond.js" and save. Linking src belongs in head and not body per Respond's instructions.
+  *For Respond.js*: Go to the Respond.js Github page, copy the *.min* source code, create a new file in your project's JS folder called "respond.js" and save. Linking src belongs in head and not body per Respond's instructions.
   
 **The Grid System**
 
