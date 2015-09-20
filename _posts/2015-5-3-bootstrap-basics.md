@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrap v.3 Basics
 ---
-
+Summary: Getting acclimated with Bootstrap setup so you can run and play with it.
 
 **What is Bootstrap?**
 
