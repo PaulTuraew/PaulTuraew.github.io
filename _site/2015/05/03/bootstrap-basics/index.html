@@ -56,7 +56,9 @@
       <h2>Bootstrap v.3 Basics</h2>
       <p class="muted">May 03, 2015</p>
 
-      <p><strong>What is Bootstrap?</strong></p>
+      <p>Summary: Getting acclimated with Bootstrap setup so you can run and play with it.</p>
+
+<p><strong>What is Bootstrap?</strong></p>
 
 <p>Bootstrap is a responsive design framework that is mobile first. Basically, you download the files, incorporate them into your project and use what you need, how you need.</p>
 
@@ -70,29 +72,37 @@
 
 <p>After downloading the files from http://getbootstrap.com/getting-started/ you will really only need 3 files which are located in the "dist" folder: "css", "js", and "fonts."</p>
 
-<p>Don't worry about the .min files (within the css and js folders), these are simply condensed versions of the other css files. good to link to them but use larger (spaced out) files for reference.</p>
+<p>Don't worry about the .min files (within the css and js folders), these are simply condensed versions of the other css files. It's good to link to them but look at the larger (spaced out / un-minified) files for reference.</p>
 
 <p>To truley make best use of Bootstrap, you will also want to download and link to jQuery and Respond.js in your HTML file.</p>
 
 <p><strong>Setting up the HTML page</strong></p>
 
-<pre><code>&lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;title&gt;My Website&lt;/title&gt;
-  &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
-  &lt;link href="css/custom.css" rel="stylesheet"&gt;
-  &lt;script src="js/respond.js"&gt;&lt;/script&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;RI Turaew's Professional Site&lt;/title&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;link href="css/custom.css" rel="stylesheet"&gt;
+    &lt;script src="js/respond.js"&gt;&lt;/script&gt;
   &lt;/head&gt;
+
   &lt;body&gt;
-  &lt;!-- javascript here in body to allow page to load and not wait for JS functionality (increase speed)--&gt;
-  &lt;!-- CDN version of jQuery (to not load entire library, this will load from a URL) --&gt;
-  &lt;script src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
-  &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+    &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 
-<p>  <em>For Respond.js</em>: Go to Github page, copy the .min source code, create a new file in your project's JS folder called "respond.js" and save. Linking src belongs in head and not body per Respond's instructions.</p>
+<p>  <em>For Respond.js</em>: Go to the Respond.js Github page, copy the <em>.min</em> source code, create a new file in your project's JS folder called "respond.js" and save. Linking src belongs in head and not body per Respond's instructions.</p>
 
 <p><strong>The Grid System</strong></p>
 

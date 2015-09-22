@@ -1,0 +1,129 @@
+<link href="/css/blog_post.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>turaew.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Paul Turaew built with Jekyll and Bootstrap">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/turaew_favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/turaew_favicon.ico" type="image/x-icon">
+  <style>
+  body {
+  }
+  </style>
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand", "active" href="/">{ turaew.io }</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+              <!--   <li><a id="link1" class="nav-section1" href="/">back home</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/index.js"></script>
+    </body>
+
+
+<div class="row-fluid">
+  <div class="span8">
+    <div class="postbody">
+      <h2>Local Server Using Gulp + Browsersync</h2>
+      <p class="muted">September 19, 2015</p>
+
+      <p><strong>Step-by-Step Instructions</strong></p>
+
+<ol>
+<li>Run <code>npm insall</code></li>
+<li>Ensure Gulp is installed globally <code>npm install --global gulp</code></li>
+<li>Install Gulp in project dev dependencies (in project folder) <code>npm install --save-dev gulp</code></li>
+<li>Install Browsersync <code>npm install browser-sync</code></li>
+<li>Into the root folder of your project, create a new filed called <strong>package.json</strong> with the following code:
+<code>
+{
+"name": "STC40",
+"version": "1.0.0",
+"description": "",
+"main": "gulpfile.js",
+"dependencies": {
+ "gulp": "^3.8.11",
+ "browser-sync": "^2.2.1",
+ "gulp-load-plugins": "^0.8.1"
+},
+"devDependencies": {},
+"scripts": {
+ "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"
+},
+"author": "",
+"license": "ISC"
+}
+</code></li>
+<li>Into the root folder of your project, create a new file called <strong>gulpfile.js</strong> and into it write:</li>
+</ol>
+
+
+<pre><code>var gulp = require('gulp');
+var $ = require('gulp-load-plugins')();
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+
+gulp.task('serve', function () {
+  browserSync({
+    notify: false,
+    port: 9000,
+    server: {
+      baseDir: "./",
+      index: 'index.html'
+    }
+  });
+
+  // watch for changes
+  gulp.watch([
+    '*.html', 'css/*.css', 'js/*.js'
+  ]).on('change', reload);
+
+});
+</code></pre>
+
+<p>With the above code, the gulpfile will look to load the 'index.html' page in the local server at port 9000. It will also watch and serve up in the local server any changes made to files with the extensions listed in the <em>gulp.watch</em> array.</p>
+
+<p>Your root file/folder structure should now resemble:</p>
+
+<p><img src="/assets/gulp_files.png" alt="Gulp and Browsersync file structure" /></p>
+
+<p>Finally, to see the local server up and running, from your commmand line run: <code>gulp serve</code> to see it boot up in your browser.</p>
+
+      <br>
+      <a class="button back" href="/blog">Back to Blog</a>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+
