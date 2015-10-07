@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Learning APIs Part1 - cURL and GitHub JSON
+title: Learning APIs Part1 - Seeing the Data
 ---
-
 
 For me, APIs (application program interfaces) ~~are~~ were like Homer's island of Sirens - a beautiful sounding place where programmer happiness abounds but get to close and you'll die a thousand deaths by poor documentation and JSON (Javascript Object Notation) spaghetti. 
 
