@@ -3,7 +3,7 @@ layout: post
 title: CURL: A Reminder to Look Stuff Up
 ---
 
-Summary: Stop and smell the coding roses.
+Stop and smell the coding roses.
 
 The full post title should really read: **CURL: A Reminder to Look Stuff Up (Even if It's Not Directly Pertinent to Your Immediate Objective).
 
