@@ -23,3 +23,16 @@ Equally important, in my searches I came across a really great page providing fo
 - HTTP Authentication
 - HTML Forms and Methods (GET, POST, etc. requests); and
 - Cookies
+
+
+
+
+
+ 
+
+
+
+
+
+
+  
