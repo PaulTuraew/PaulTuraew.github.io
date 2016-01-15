@@ -5,7 +5,7 @@ title: Meetups for Introverts
 
 Stop and smell the coding roses.
 
-The full post title should really read: **CURL: A Reminder to Look Stuff Up (Even if It's Not Directly Pertinent to Your Immediate Objective).
+The full post title should really read: **CURL: A Reminder to Look Stuff Up (Even if It's Not Directly Pertinent to Your Immediate Objective)**.
 
 I recently started a new job and was setting up my development environment on my new computer. I found myself using the **curl** command often to install various programs.
 
