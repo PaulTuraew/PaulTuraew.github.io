@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meetups for Introverts
+title: Curl the Roses
 ---
 
 Stop and smell the coding roses.
