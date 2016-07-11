@@ -1,0 +1,110 @@
+<link href="/css/blog_post.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>turaew.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Paul Turaew built with Jekyll and Bootstrap">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/turaew_favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/turaew_favicon.ico" type="image/x-icon">
+  <style>
+  body {
+  }
+  </style>
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand", "active" href="/">{ turaew.io }</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+              <!--   <li><a id="link1" class="nav-section1" href="/">back home</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/index.js"></script>
+    </body>
+
+
+<div class="row-fluid">
+  <div class="span8">
+    <div class="postbody">
+      <h2>Learning APIs Part1 - Seeing the Data</h2>
+      <p class="muted">October 08, 2015</p>
+
+      <p>For me, APIs (application program interfaces) <del>are</del> were like Homer's island of Sirens - a beautiful sounding place where programmer happiness abounds but get to close and you'll die a thousand deaths by poor documentation and JSON (Javascript Object Notation) spaghetti.</p>
+
+<p>I was able to utilize a 3rd party API for one of my individual projects at General Assembly in conjunction with a data visualization library called HighCharts to extract basic data (number of alternative fuel stations by state) from NREL (the National Renewable Energy Laboratory), however, this project was done almost a year ago and since then I have been out of touch.</p>
+
+<p><strong>This post is a first in a series I hope to write documenting the things I learn when re-familiarizing myself with the world of APIs, jQuery, AJAX and JSON.</strong></p>
+
+<p>Let me begin with a simple premise: We should try to <strong><em>SEE</em></strong> the data we want to use. I found a great explanation provided by the GitHub API documentation <a href="https://developer.github.com/guides/getting-started/">here</a>. Basically, it takes a very babystepish approach to utilizing HTTP to retrieve JSON:</p>
+
+<ol>
+<li><p><strong>Using cURL</strong>. cURL is a command line tool that allows you to use the keyword <em>curl</em> in your terminal (Mac) to retrieve or send files/data from/to a server using URL syntax. See list of cURL commands <a href="http://curl.haxx.se/docs/manpage.html">here</a>.</p></li>
+<li><p>When you use a <em>curl</em> command, it's like making a <em>GET</em> request from the server using HTTP.</p></li>
+<li><p>E.g. If you're in the Terminal, type (replacing your GitHub username at the endpoint):</p></li>
+</ol>
+
+
+<p><code>curl https://api.github.com/users/yourGitHubUserName</code></p>
+
+<p>What you should see is a bunch of <strong>JSON</strong> with key, value pairs. This is the song the sirens sing. All JSON is is an <em>object</em> that represents something in <em>key</em> and <em>value</em> pairs. JSON objects can be nested within each other and this is where things can get confusing. For the purposes of this post, we are only concerned with familiarizing ourselves with how we can manipulate HTTP to retrieve data and what that data looks like.</p>
+
+<p><em>Footnote: If you don't want to use cURL, you can always enter the address into your browser to return the same results.</em></p>
+
+<p>The GitHub API is not only well documented but the JSON returned, is very well organized and clear, for example if you type in <code>https://api.github.com/users/dhh</code> you will see:</p>
+
+<p><img src="/assets/github_json1.png" alt="DHH github account" /></p>
+
+<p>This info is all well and good but we want to see something more interesting. Let's try to see info on all of DHH's repos in his GitHub account. You'll see that there is a secondary layer we must go down... the line:</p>
+
+<p><code>repos_url: "https://api.github.com/users/dhh/repos",</code> has a link that will get us where we need to go (I do not magically know this, but have figured it out based on a little common sense and a 10 year old's desire to play). Clicking here, we will see:</p>
+
+<p><img src="/assets/github_json2.png" alt="DHH github account" /></p>
+
+<p>We now clearly see additional info on each of the repos belonging to the user DHH.</p>
+
+<p>About a third of the way down, we see the following:</p>
+
+<p><code>languages_url: "https://api.github.com/repos/dhh/asset-hosting-with-minimum-ssl/languages"</code></p>
+
+<p>If we click here, we will see a nice, clean "languages" object showing us a key, value pair representing the langages used in that particular repo and the # of lines of code.</p>
+
+<p><img src="/assets/github_json3.png" alt="DHH github account" /></p>
+
+<p>We've arrived on the island!</p>
+
+      <br>
+      <a class="button back" href="/blog">Back to Blog</a>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+

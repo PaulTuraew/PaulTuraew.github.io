@@ -6,6 +6,11 @@ body {
   height: 100%;
 }
 
+.no-margin{
+  margin: 0px;
+  padding-top:25px;
+}
+
 
 #coversection {
   background: url("http://turaew.io/assets/prez_biz2.jpg");
@@ -61,7 +66,7 @@ body {
 }
 
 #headshot{
-  width:75%;
+  width:80%;
   margin:0 auto;
 }
 
