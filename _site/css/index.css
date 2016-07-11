@@ -11,6 +11,14 @@ body {
   padding-top:25px;
 }
 
+.padding-l-r{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.smaller-img{
+  max-width: 85%;
+}
 
 #coversection {
   background: url("http://turaew.io/assets/prez_biz2.jpg");
