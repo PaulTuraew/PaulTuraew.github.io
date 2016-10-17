@@ -59,64 +59,65 @@
       <p><strong>Step-by-Step Instructions</strong></p>
 
 <ol>
-<li>Run <code>npm insall</code></li>
-<li>Ensure Gulp is installed globally <code>npm install --global gulp</code></li>
-<li>Install Gulp in project dev dependencies (in project folder) <code>npm install --save-dev gulp</code></li>
-<li>Install Browsersync <code>npm install browser-sync</code></li>
-<li>Into the root folder of your project, create a new filed called <strong>package.json</strong> with the following code:
+  <li>Run <code>npm insall</code></li>
+  <li>Ensure Gulp is installed globally <code>npm install --global gulp</code></li>
+  <li>Install Gulp in project dev dependencies (in project folder) <code>npm install --save-dev gulp</code></li>
+  <li>Install Browsersync <code>npm install browser-sync</code></li>
+  <li>Into the root folder of your project, create a new filed called <strong>package.json</strong> with the following code:
 <code>
 {
-"name": "STC40",
-"version": "1.0.0",
-"description": "",
-"main": "gulpfile.js",
-"dependencies": {
+  "name": "STC40",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
  "gulp": "^3.8.11",
  "browser-sync": "^2.2.1",
  "gulp-load-plugins": "^0.8.1"
-},
-"devDependencies": {},
-"scripts": {
+  },
+  "devDependencies": {},
+  "scripts": {
  "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"
-},
-"author": "",
-"license": "ISC"
+  },
+  "author": "",
+  "license": "ISC"
 }
 </code></li>
-<li>Into the root folder of your project, create a new file called <strong>gulpfile.js</strong> and into it write:</li>
+  <li>Into the root folder of your project, create a new file called <strong>gulpfile.js</strong> and into it write:</li>
 </ol>
 
+<p>```
+var gulp = require(‘gulp’);
+var $ = require(‘gulp-load-plugins’)();
+var browserSync = require(‘browser-sync’);
+var reload = browserSync.reload;</p>
 
-<pre><code>var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-
-gulp.task('serve', function () {
+<p>gulp.task(‘serve’, function () {
   browserSync({
     notify: false,
     port: 9000,
     server: {
-      baseDir: "./",
-      index: 'index.html'
+      baseDir: “./”,
+      index: ‘index.html’
     }
-  });
+  });</p>
 
-  // watch for changes
+<p>// watch for changes
   gulp.watch([
-    '*.html', 'css/*.css', 'js/*.js'
-  ]).on('change', reload);
+    ‘<em>.html’, ‘css/</em>.css’, ‘js/*.js’
+  ]).on(‘change’, reload);</p>
 
-});
-</code></pre>
+<p>});
+```</p>
 
-<p>With the above code, the gulpfile will look to load the 'index.html' page in the local server at port 9000. It will also watch and serve up in the local server any changes made to files with the extensions listed in the <em>gulp.watch</em> array.</p>
+<p>With the above code, the gulpfile will look to load the ‘index.html’ page in the local server at port 9000. It will also watch and serve up in the local server any changes made to files with the extensions listed in the <em>gulp.watch</em> array.</p>
 
 <p>Your root file/folder structure should now resemble:</p>
 
 <p><img src="/assets/gulp_files.png" alt="Gulp and Browsersync file structure" /></p>
 
 <p>Finally, to see the local server up and running, from your commmand line run: <code>gulp serve</code> to see it boot up in your browser.</p>
+
 
       <br>
       <a class="button back" href="/blog">Back to Blog</a>
